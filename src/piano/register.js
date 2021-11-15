@@ -9,29 +9,29 @@ const Register = (aid) => {
   tp.push([
     "init",
     function () {
-      tp.offer.show({
-        offerId: "OF43O622TZG1",
-        templateId: "OTJ0Y2ZCP98B",
-        displayMode: "modal",
-      });
-
-      // /* cODIGO PARA LLAMAR LAS PLANTILLAS DE REGISTRO */
-      // tp.pianoId.show({
-      //   // Dos formas de llamar su despliegue
+      // tp.offer.show({
+      //   offerId: "OF43O622TZG1",
+      //   templateId: "OTJ0Y2ZCP98B",
       //   displayMode: "modal",
-      //   // displayMode: "inline",
-      //   // containerSelector: "#formulario",
-      //   // template de pianoID para cuando te registras
-      //   screen: "register",
-      //   // screen: "login",
-      //   // metodos extras para llamar al template
-      //   loggedIn: function (data) {
-      //     console.log("user ", data.user, " logged in with token", data.token);
-      //   },
-      //   loggedOut: function () {
-      //     console.log("user logged out");
-      //   },
       // });
+
+      /* cODIGO PARA LLAMAR LAS PLANTILLAS DE REGISTRO */
+      tp.pianoId.show({
+        // Dos formas de llamar su despliegue
+        displayMode: "modal",
+        // displayMode: "inline",
+        // containerSelector: "#formulario",
+        // template de pianoID para cuando te registras
+        screen: "login",
+        // screen: "login",
+        // metodos extras para llamar al template
+        loggedIn: function (data) {
+          console.log("user ", data.user, " logged in with token", data.token);
+        },
+        loggedOut: function () {
+          console.log("user logged out");
+        },
+      });
     },
   ]);
   // tp.experience.execute();
