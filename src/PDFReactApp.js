@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
-import YugiCard from "./components/YugiCard";
-import YugiPDF from "./components/YugiPDF";
+import YugiCard from "./components/cards/YugiCard";
+import YugiPDF from "./components/pdf/YugiPDF";
 import { PDFDownloadLink, StyleSheet } from "@react-pdf/renderer";
 
 const styles = StyleSheet.create({

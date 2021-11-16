@@ -11,16 +11,16 @@ const Register = (aid) => {
     function () {
       // tp.offer.show({
       //   offerId: "OF43O622TZG1",
-      //   templateId: "OTJ0Y2ZCP98B",
+      //   templateId: "OT15JQPQ9YXO",
       //   displayMode: "modal",
       // });
 
       /* cODIGO PARA LLAMAR LAS PLANTILLAS DE REGISTRO */
       tp.pianoId.show({
         // Dos formas de llamar su despliegue
-        displayMode: "modal",
-        // displayMode: "inline",
-        // containerSelector: "#formulario",
+        // displayMode: "modal",
+        displayMode: "inline",
+        containerSelector: "#formulario",
         // template de pianoID para cuando te registras
         screen: "login",
         // screen: "login",
@@ -34,19 +34,6 @@ const Register = (aid) => {
       });
     },
   ]);
-  // tp.experience.execute();
-  // tp.pianoId.show({
-  //   displayMode: "inline",
-  //   // screen: "register",
-  //   templateId: "OT15JQPQ9YXO",
-  //   containerSelector: "#formulario",
-  //   loggedIn: function (data) {
-  //     console.log("user ", data.user, " logged in with token", data.token);
-  //   },
-  //   loggedOut: function () {
-  //     console.log("user logged out");
-  //   },
-  // });
 };
 
 export default Register;

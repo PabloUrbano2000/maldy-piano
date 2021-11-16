@@ -1,0 +1,133 @@
+<form class="signwall-inside_forms-form form-trome organico">
+  <errors-list></errors-list>
+  <div *beforeRestoreRequired>
+    <div class="group-float-trome">
+      <br />
+      <h1 class="group-float-trome__title">
+        ¡Hola! <br />¿Olvidaste tu contraseña?
+      </h1>
+      <p class="group-float-trome__subtitle">
+        No te preocupes, cámbiala fácilmente.
+      </p>
+    </div>
+    <br />
+    <div class="spacing-trome"></div>
+    <div class="signwall-inside_forms-cont">
+      <div class="signwall-inside_forms-field">
+        <span showIfEmailInvalid class="error-message"
+          ><t>Email is required</t></span
+        >
+        <span
+          showIfEmailInvalidBy="SERVER_ERROR"
+          class="error-message"
+          setEmailServerErrorMessage
+        ></span>
+        <input
+          fieldRestoreEmail
+          id="femail"
+          class=""
+          type="email"
+          inputmode="email"
+          autocomplete="email"
+          name="femail"
+          placeholder="Correo electrónico"
+          required=""
+          error=""
+          value=""
+          pn-autofocus
+        /><label for="femail" class="">Correo electrónico</label>
+      </div>
+    </div>
+    <button
+      actionRestore
+      type="submit"
+      class="signwall-inside_forms-btn mt-20 mb-10"
+      style="color: rgb(241, 92, 35); background: rgb(255, 101, 15)"
+    >
+      CAMBIAR CONTRASEÑA
+    </button>
+
+    <!-- <re-captcha></re-captcha> -->
+
+    <p
+      class="signwall-inside_forms-text mt-20 mb-10"
+      style="font-size: 12px; color: rgb(0, 0, 0); text-align: center"
+    >
+      Volver a<a
+        showScreen="login"
+        class="signwall-inside_forms-link ml-5"
+        style="color: rgb(255, 101, 15); font-weight: bold"
+        >Iniciar Sesión</a
+      >
+    </p>
+    <p class="signwall-inside_forms-text-note">
+      Al hacer click estarás aceptando los Términos y <br />
+      condiciones y la Política de privacidad.
+    </p>
+  </div>
+</form>
+<form
+  class="signwall-inside_forms-form form-trome organico"
+  data-e2e="afterRestore"
+  *afterRestoreRequired
+>
+  <div class="group-float-trome">
+    <br />
+    <h1 class="group-float-trome__title">
+      ¡Hola! <br />¿Olvidaste tu contraseña?
+    </h1>
+    <p class="group-float-trome__subtitle">
+      No te preocupes, cámbiala fácilmente.
+    </p>
+  </div>
+  <br />
+  <div class="center block mb-20">
+    <svg width="120" height="120">
+      <circle cx="60" cy="60" r="60" fill="#ffede5"></circle>
+      <g fill="#fff">
+        <path d="M59.7 73.7L91.3 32l-37 17.3z"></path>
+        <path d="M91.3 32L33 44l21.5 5.3 5.3 24.5 1.8-22.1 23.9 4.2z"></path>
+      </g>
+      <path d="M54.4 49.3l37-16.1-29.9 18.5-1.8 22z" fill="#88e3ff"></path>
+      <path
+        d="M59.7 73.7l1.8-22 23.9 4.2 6-23.9-58.5 12 21.5 5.3 2 6.6m-11.6 4.4l-1.4 1.1m-7.9 5.9c-4.6 3.9-6.3 7-6.5 15.4-.4 19.7 40.3 6.1 45.3 5 9-1.8 8.7-10.7-2.7-8.6-8.3 1.5-9.4 15.5 8.3 15.5m4.9-.3l1.8-.3"
+        fill="none"
+        stroke="#444b54"
+      ></path>
+    </svg>
+  </div>
+  <h4 class="signwall-inside_forms-title center mb-10" style="font-size: 20px">
+    Correo enviado
+  </h4>
+  <p
+    class="signwall-inside_forms-text mt-10 mb-10 center"
+    style="line-height: 28px; text-align: center"
+  >
+    Revisa tu bandeja de correo para<br />
+    cambiar tu contraseña
+  </p>
+  <button
+    showScreen="login"
+    type="button"
+    class="signwall-inside_forms-btn"
+    style="color: rgb(241, 92, 35); background: rgb(255, 101, 15)"
+  >
+    ACEPTAR
+  </button>
+  <p
+    class="signwall-inside_forms-text mt-20 mb-10"
+    style="font-size: 12px; color: rgb(0, 0, 0); text-align: center"
+  >
+    Volver a<a
+      showScreen="login"
+      class="signwall-inside_forms-link ml-5"
+      style="color: rgb(255, 101, 15); font-weight: bold"
+      >Iniciar Sesión</a
+    >
+  </p>
+  <p class="signwall-inside_forms-text-note">
+    Al hacer click estarás aceptando los Términos y <br />
+    condiciones y la Política de privacidad.
+  </p>
+</form>
+<!--<div class="divider"></div>-->

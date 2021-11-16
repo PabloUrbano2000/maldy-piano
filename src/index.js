@@ -1,15 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
-import PaisesApp from "./PaisesApp";
-import JsPDFApp from "./JsPDFApp";
-import PDFReactApp from "./PDFReactApp";
-import PruebasPiano from "./PruebasPiano";
-import PianoCore from "./piano/core";
+import PianoApp from "./PianoApp";
 
 ReactDOM.render(
   <React.StrictMode>
-    <PruebasPiano></PruebasPiano>
+    <PianoApp></PianoApp>
   </React.StrictMode>,
   document.getElementById("root")
 );

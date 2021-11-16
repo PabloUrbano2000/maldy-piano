@@ -1,0 +1,178 @@
+<form class="signwall-inside_forms-form form-trome organico">
+  <div class="group-float-trome">
+    <h1 class="group-float-trome__title">¡Regístrate gratis!</h1>
+    <p class="signwall-inside_forms-text mt-10 mb-10 center">
+      Accede fácilmente con:
+    </p>
+    <button
+      class="
+        signwall-inside_forms-btn-social
+        google
+        middle
+        google-middle
+        trome-google
+      "
+      type="button"
+      id="btn-sign-google"
+    ></button
+    ><button
+      class="
+        signwall-inside_forms-btn-social
+        facebook
+        middle
+        facebook-middle
+        trome-facebook
+      "
+      type="button"
+      id="btn-sign-facebook"
+    ></button>
+    <p class="signwall-inside_forms-text mt-15 center">
+      o completa tus datos para registrarte
+    </p>
+  </div>
+  <div class="spacing-trome"></div>
+  <errors-list></errors-list>
+  <div class="signwall-inside_forms-cont">
+    <div class="signwall-inside_forms-field">
+      <span showIfEmailInvalid class="error-message"
+        ><t>Email is required</t></span
+      >
+      <span
+        showIfEmailInvalidBy="SERVER_ERROR"
+        class="error-message"
+        setEmailServerErrorMessage
+      ></span>
+      <input
+        fieldRegisterEmail
+        id="lemail"
+        class=""
+        type="email"
+        inputmode="email"
+        autocomplete="email"
+        name="lemail"
+        placeholder="Correo electrónico"
+        error=""
+        value=""
+        pn-autofocus
+      /><label for="lemail" class="">Correo electrónico*</label>
+    </div>
+  </div>
+  <div class="signwall-inside_forms-cont">
+    <div class="signwall-inside_forms-field">
+      <span showIfPasswordInvalidBy="PASSWORD_REQUIRED" class="error-message"
+        ><t>Password is required</t></span
+      >
+      <span showIfPasswordInvalidBy="PASSWORD_MIXED_CASE" class="error-message"
+        ><t>Password must contain lowercase and uppercase letters</t></span
+      >
+      <span
+        showIfPasswordInvalidBy="PASSWORD_ALPHANUMERIC"
+        class="error-message"
+        ><t>Password must contain both letters and numbers</t></span
+      >
+      <span
+        showIfPasswordInvalidBy="PASSWORD_SPECIAL_CHARACTERS"
+        class="error-message"
+        ><t>Password must contain any characters</t></span
+      >
+      <span
+        showIfPasswordInvalidBy="PASSWORD_CANT_CONTAIN_EMAIL"
+        class="error-message"
+        ><t>Password can not contain the user's email address</t></span
+      >
+      <span showIfPasswordInvalidBy="PASSWORD_MIN_LENGTH" class="error-message"
+        ><t>Minimum number of characters required for user password.</t></span
+      >
+      <span
+        showIfPasswordInvalidBy="SERVER_ERROR"
+        class="error-message"
+        setPasswordServerErrorMessage
+      ></span>
+      <input
+        fieldRegisterPassword
+        id="lpass"
+        class=""
+        type="password"
+        autocomplete="current-password"
+        name="lpass"
+        placeholder="Contraseña"
+        error=""
+        value=""
+      /><label for="lpass" class="">Contraseña*</label>
+      <!--<i showLoginPassword class="icon icon-show"></i>
+          <i hideLoginPassword class="icon icon-hide"></i>-->
+    </div>
+  </div>
+  <!--<label class="signwall-inside_forms-checkbox"
+      ><input type="checkbox" name="rpolit" value="1" checked="" />
+      <p class="signwall-inside_forms-text mt-10" style="font-size: 12px">
+        Al registrarme por redes sociales o por este formulario autorizo el uso de
+        mis datos para<a
+          href="/tratamiento-de-datos/"
+          target="_blank"
+          rel="noreferrer"
+          class="signwall-inside_forms-link ml-5 inline"
+          style="color: rgb(255, 101, 15); font-weight: bold"
+          >fines adicionales</a
+        >
+      </p>
+      <span></span><span class="checkmark trome"></span></label
+    ><label class="signwall-inside_forms-checkbox"
+      ><input type="checkbox" name="rterms" required="" error="" value="0" />
+      <p class="signwall-inside_forms-text mt-10" style="font-size: 12px">
+        Al crear la cuenta acepto los<a
+          href="/terminos-y-condiciones/"
+          target="_blank"
+          rel="noreferrer"
+          class="signwall-inside_forms-link ml-5 mr-5 inline"
+          style="color: rgb(255, 101, 15); font-weight: bold"
+          >Términos y Condiciones</a
+        >y<a
+          href="/politica-de-privacidad/"
+          target="_blank"
+          rel="noreferrer"
+          class="signwall-inside_forms-link ml-5 inline"
+          style="color: rgb(255, 101, 15); font-weight: bold"
+          >Políticas de Privacidad</a
+        >
+      </p>
+      <span class=""></span><span class="checkmark trome"></span></label
+    >-->
+
+  <div class="consents-block">
+    <consent-boxes></consent-boxes>
+  </div>
+  <button
+    actionRegister
+    type="submit"
+    class="signwall-inside_forms-btn mt-15 mb-5"
+    style="color: rgb(241, 92, 35); background: rgb(255, 101, 15)"
+  >
+    Registrarme
+  </button>
+  <p
+    class="signwall-inside_forms-text mt-20 mb-10"
+    style="font-size: 12px; color: rgb(0, 0, 0); text-align: center"
+  >
+    Ya tengo una cuenta<a
+      showScreen="login"
+      data-e2e="haveAccountPianoIDLink"
+      class="signwall-inside_forms-link ml-5"
+      style="color: rgb(255, 101, 15); font-weight: bold"
+      >Iniciar Sesión</a
+    >
+  </p>
+</form>
+
+<!--<p class="input-group with-icon" *showIfRequireConfirm="'password'">
+      <input fieldConfirmPassword type="password" value="">
+      <span class="placeholder"><i class="icon icon-password"></i><t>confirm password</t></span>
+      <span class="float">
+          <i showPassword class="icon icon-show"></i>
+          <i hidePassword class="icon icon-hide"></i>
+    </span>
+      <span showIfRegisterConfirmPasswordInvalidBy="PASSWORD_NOT_CONFIRMED" class="error-message"><t>Password and Confirm password does not match</t></span>
+      <span showIfRegisterConfirmPasswordInvalidBy="SERVER_ERROR" class="error-message" setConfirmPasswordServerErrorMessage></span>
+  </p>-->
+
+<!--<custom-fields></custom-fields>-->
