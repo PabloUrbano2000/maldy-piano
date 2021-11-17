@@ -1,4 +1,5 @@
 import React from "react";
+import PianoForm from "./PianoForm";
 
 export default function Organic() {
   return (
@@ -36,7 +37,7 @@ export default function Organic() {
               <div className="sign-auth_benefits-cont"></div>
             </div>
             <div className="right-modal">
-              <div id="pianoform"></div>
+              <PianoForm />
             </div>
           </div>
         </div>
