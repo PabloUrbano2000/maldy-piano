@@ -1,9 +1,10 @@
 import React from "react";
+import Organic from "./components/signwall/Organic";
 import PianoCore from "./piano/core";
 import Register from "./piano/register";
 
 export default function PianoApp() {
-  const aid = "PeVZORGJsu";
+  const aid = "6UafT9Fjsu";
   React.useEffect(() => {
     //primera carga
     PianoCore(aid);
@@ -13,5 +14,9 @@ export default function PianoApp() {
       Register(aid);
     }, 1500);
   }, []);
-  return <div id="formulario"></div>;
+  return (
+    <div>
+      <Organic />
+    </div>
+  );
 }

@@ -20,9 +20,9 @@ const Register = (aid) => {
         // Dos formas de llamar su despliegue
         // displayMode: "modal",
         displayMode: "inline",
-        containerSelector: "#formulario",
+        containerSelector: "#pianoform",
         // template de pianoID para cuando te registras
-        screen: "login",
+        screen: "register",
         // screen: "login",
         // metodos extras para llamar al template
         loggedIn: function (data) {
