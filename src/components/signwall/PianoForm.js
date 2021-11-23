@@ -7,7 +7,6 @@ export default function PianoForm({ aid }) {
     Register(aid);
   }, 1500);
   return (
-    
     <div id="pianoform" style={{ height: "100%", overflowX: "hidden" }}></div>
   );
 }
