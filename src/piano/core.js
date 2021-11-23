@@ -16,6 +16,6 @@ const PianoCore = (aid) => {
     a.src = src;
     var b = document.getElementsByTagName("script")[0];
     b.parentNode.insertBefore(a, b);
-  })(`https://sandbox.tinypass.com/xbuilder/experience/load?aid=${aid}`);
+  })(`${PIANO_URL}${aid}`);
 };
 export default PianoCore;

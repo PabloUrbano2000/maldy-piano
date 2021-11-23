@@ -7,7 +7,7 @@ import PDFReactApp from "./PDFReactApp";
 import PianoCore from "./piano/core";
 
 //----------TROME----------COMERCIO------
-const aid = "6UafT9Fjsu"; /*"PeVZORGJsu"*/
+const aid = "6UafT9Fjsu" /*"PeVZORGJsu"*/;
 
 export default function PianoApp() {
   const [user, setUser] = React.useState(null);

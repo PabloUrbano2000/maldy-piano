@@ -11,9 +11,9 @@ const Offer = (aid) => {
     function () {
       tp.offer.show({
         // offer id es el codigo de las ofertas (no confundir con template)
-        offerId: "OF43O622TZG1",
+        offerId: "OFOEY19PJVRU",
         // plantilla a llamar (puede ser cualquiera)
-        templateId: "OT1R5I835VVC",
+        templateId: "OTRLZXVICPFY",
         // poner como se quiere visualizar
         displayMode: "modal",
       });

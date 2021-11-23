@@ -38,8 +38,10 @@ export default function Nav({ aid }) {
           type="button"
           class="btn btn-dark my-2 my-sm-0"
           onClick={() => {
-            /*Logout();
-            localStorage.removeItem("user-piano");*/
+            if (window.tp) {
+              Logout();
+              localStorage.removeItem("user-piano");
+            }
           }}>
           Cerrar Sesión
         </button>
