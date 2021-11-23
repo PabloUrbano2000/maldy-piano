@@ -1,12 +1,12 @@
 const PIANO_URL = "//sandbox.tinypass.com/xbuilder/experience/load?aid=";
 const PianoCore = (aid) => {
   // por pabliiiito
-  var a = document.createElement("script");
-  a.type = "text/javascript";
-  a.async = true;
-  a.src = `${PIANO_URL}${aid}`;
-  var b = document.getElementsByTagName("script")[0];
-  b.parentNode.insertBefore(a, b);
+  // var a = document.createElement("script");
+  // a.type = "text/javascript";
+  // a.async = true;
+  // a.src = `${PIANO_URL}${aid}`;
+  // var b = document.getElementsByTagName("script")[0];
+  // b.parentNode.insertBefore(a, b);
 
   // original
   (function (src) {
@@ -16,6 +16,6 @@ const PianoCore = (aid) => {
     a.src = src;
     var b = document.getElementsByTagName("script")[0];
     b.parentNode.insertBefore(a, b);
-  })("https://sandbox.tinypass.com/xbuilder/experience/load?aid=PeVZORGJsu");
+  })(`https://sandbox.tinypass.com/xbuilder/experience/load?aid=${aid}`);
 };
 export default PianoCore;

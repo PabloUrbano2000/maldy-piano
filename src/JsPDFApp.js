@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import YugiCard from "./components/YugiCard";
+import YugiCard from "./components/cards/YugiCard";
 import { jsPDF } from "jspdf";
 import * as htmlToImage from "html-to-image";
 

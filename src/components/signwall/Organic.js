@@ -1,7 +1,7 @@
 import React from "react";
 import PianoForm from "./PianoForm";
 
-export default function Organic() {
+export default function Organic({ aid }) {
   return (
     <div id="sign-modal">
       <div className="signwall-modal open">
@@ -22,7 +22,12 @@ export default function Organic() {
                   />
                 </div>
               </div>
-              <button className="profile-header__close" type="button">
+              <button
+                className="profile-header__close"
+                type="button"
+                onClick={() => {
+                  window.location.href = "/";
+                }}>
                 <svg width="14" height="14">
                   <g fill="#ffffff">
                     <path d="M11.63.4l-9.91 9.92 8.6-8.6-9.91 9.91a1.39 1.39 0 0 0 1.96 1.96l9.91-9.91-8.6 8.6 9.92-9.9A1.39 1.39 0 0 0 11.64.4z"></path>
@@ -32,12 +37,17 @@ export default function Organic() {
               </button>
             </div>
           </header>
+
+          {/* TODO EL CONTENEDOR VA VENIR DESDE PIANO */}
+          {/* <PianoForm /> */}
           <div className="cont-modal" style={{ height: "calc(100% - 50px)" }}>
             <div className="left-modal bg-trome">
               <div className="sign-auth_benefits-cont"></div>
             </div>
-            <div className="right-modal">
-              <PianoForm />
+            <div
+              className="right-modal"
+              style={{ overflowY: "auto", overflowX: "none" }}>
+              <PianoForm aid={aid} />
             </div>
           </div>
         </div>

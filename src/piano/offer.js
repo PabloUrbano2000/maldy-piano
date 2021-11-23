@@ -13,7 +13,7 @@ const Offer = (aid) => {
         // offer id es el codigo de las ofertas (no confundir con template)
         offerId: "OF43O622TZG1",
         // plantilla a llamar (puede ser cualquiera)
-        templateId: "OTX4BFRDOGRN",
+        templateId: "OT1R5I835VVC",
         // poner como se quiere visualizar
         displayMode: "modal",
       });
