@@ -1,146 +1,140 @@
-<div class="cont-modal" style="height: calc(100% - 50px)">
-  <div class="left-modal bg-trome">
-    <div class="sign-auth_benefits-cont"></div>
+<form class="signwall-inside_forms-form form-trome organico">
+  <div class="group-float-trome">
+    <h1 class="group-float-trome__title">Ingresa</h1>
+    <p class="signwall-inside_forms-text mb-10 mt-10 center">
+      Accede fácilmente con:
+    </p>
+    <button
+      class="
+        signwall-inside_forms-btn-social
+        google
+        middle
+        google-middle
+        trome-google
+      "
+      type="button"
+      id="btn-sign-google"
+    ></button
+    ><button
+      class="
+        signwall-inside_forms-btn-social
+        facebook
+        middle
+        facebook-middle
+        trome-facebook
+      "
+      type="button"
+      id="btn-sign-facebook"
+    ></button>
+    <p class="signwall-inside_forms-text mt-15 center">
+      o completa tus datos para acceder
+    </p>
   </div>
-  <div class="right-modal">
-    <form class="signwall-inside_forms-form form-trome organico">
-      <div class="group-float-trome">
-        <h1 class="group-float-trome__title">Ingresa</h1>
-        <p class="signwall-inside_forms-text mb-10 mt-10 center">
-          Accede fácilmente con:
-        </p>
-        <button
-          class="
-            signwall-inside_forms-btn-social
-            google
-            middle
-            google-middle
-            trome-google
-          "
-          type="button"
-          id="btn-sign-google"
-        ></button
-        ><button
-          class="
-            signwall-inside_forms-btn-social
-            facebook
-            middle
-            facebook-middle
-            trome-facebook
-          "
-          type="button"
-          id="btn-sign-facebook"
-        ></button>
-        <p class="signwall-inside_forms-text mt-15 center">
-          o completa tus datos para acceder
-        </p>
-      </div>
-      <div class="spacing-trome"></div>
-      <errors-list></errors-list>
-      <div class="signwall-inside_forms-cont">
-        <div class="signwall-inside_forms-field">
-          <span showIfEmailInvalid class="error-message"
-            ><t>Email is required</t></span
-          >
-          <span
-            showIfEmailInvalidBy="SERVER_ERROR"
-            class="error-message"
-            setEmailServerErrorMessage
-          ></span>
-          <input
-            fieldLoginEmail
-            id="lemail"
-            class=""
-            type="email"
-            inputmode="email"
-            autocomplete="email"
-            name="lemail"
-            placeholder="Correo electrónico"
-            error=""
-            value=""
-            pn-autofocus
-          /><label for="lemail" class="">Correo electrónico</label>
-        </div>
-      </div>
-      <div class="signwall-inside_forms-cont">
-        <div class="signwall-inside_forms-field">
-          <span
-            showIfPasswordInvalidBy="PASSWORD_REQUIRED"
-            class="error-message"
-            ><t>Password is required</t></span
-          >
-          <span
-            showIfPasswordInvalidBy="SERVER_ERROR"
-            class="error-message"
-            setPasswordServerErrorMessage
-          ></span>
-          <input
-            fieldLoginPassword
-            id="lpass"
-            class=""
-            type="password"
-            autocomplete="current-password"
-            name="lpass"
-            placeholder="Contraseña"
-            error=""
-            value=""
-          /><label for="lpass" class="">Contraseña</label>
-          <!--<i showLoginPassword class="icon icon-show"></i>
-<i hideLoginPassword class="icon icon-hide"></i>-->
-        </div>
-      </div>
-      <a
-        showScreen="restore"
-        class="signwall-inside_forms-link mt-10 mb-20 inline f-right text-sm"
-        style="color: gray"
-        >Olvidé mi contraseña</a
-      ><button
-        actionLogin
-        class="signwall-inside_forms-btn"
-        style="color: rgb(241, 92, 35); background: rgb(255, 101, 15)"
+  <div class="spacing-trome"></div>
+  <errors-list></errors-list>
+  <div class="signwall-inside_forms-cont">
+    <div class="signwall-inside_forms-field">
+      <span showIfEmailInvalid class="error-message"
+        ><t>Email is required</t></span
       >
-        INICIA SESIÓN
-      </button>
-      <p
-        class="signwall-inside_forms-text mt-10 mb-20"
-        style="font-size: 12px; color: rgb(0, 0, 0); text-align: center"
-      >
-        ¿Aún no tienes una cuenta?<a
-          showScreen="register"
-          class="signwall-inside_forms-link ml-5"
-          style="color: rgb(255, 101, 15); font-weight: bold"
-          >Regístrate</a
-        >
-      </p>
-      <label class="signwall-inside_forms-checkbox"
-        ><input type="checkbox" name="rpolit" value="1" checked="" />
-        <p class="signwall-inside_forms-text mt-10" style="font-size: 12px">
-          Al ingresar por redes sociales autorizo el uso de mis datos para<a
-            href="/tratamiento-de-datos/"
-            target="_blank"
-            rel="noreferrer"
-            class="signwall-inside_forms-link ml-5 inline"
-            style="color: rgb(255, 101, 15); font-weight: bold"
-            >fines adicionales</a
-          >
-        </p>
-        <span></span><span class="checkmark trome"></span
-      ></label>
-      <p
-        class="signwall-inside_forms-text mt-10 mb-10"
-        style="text-align: justify; color: rgb(129, 129, 129); font-size: 11px"
-      >
-        En caso hayas autorizado los fines de uso adicionales anteriormente, no
-        es necesario que lo vuelvas a marcar. Si deseas retirar dicho
-        consentimiento, revisa el procedimiento en nuestras<a
-          href="/politica-de-privacidad/"
-          target="_blank"
-          rel="noreferrer"
-          class="signwall-inside_forms-link ml-5 inline"
-          style="color: rgb(255, 101, 15); font-weight: bold"
-          >Políticas de Privacidad.</a
-        >
-      </p>
-    </form>
+      <span
+        showIfEmailInvalidBy="SERVER_ERROR"
+        class="error-message"
+        setEmailServerErrorMessage
+      ></span>
+      <input
+        fieldLoginEmail
+        id="lemail"
+        class=""
+        type="email"
+        inputmode="email"
+        autocomplete="email"
+        name="lemail"
+        placeholder="Correo electrónico"
+        error=""
+        value=""
+        pn-autofocus
+      /><label for="lemail" class="">Correo electrónico</label>
+    </div>
   </div>
-</div>
+  <div class="signwall-inside_forms-cont">
+    <div class="signwall-inside_forms-field">
+      <span showIfPasswordInvalidBy="PASSWORD_REQUIRED" class="error-message"
+        ><t>Password is required</t></span
+      >
+      <span
+        showIfPasswordInvalidBy="SERVER_ERROR"
+        class="error-message"
+        setPasswordServerErrorMessage
+      ></span>
+      <input
+        fieldLoginPassword
+        id="lpass"
+        class=""
+        type="password"
+        autocomplete="current-password"
+        name="lpass"
+        placeholder="Contraseña"
+        error=""
+        value=""
+      /><label for="lpass" class="">Contraseña</label>
+      <!--<i showLoginPassword class="icon icon-show"></i>
+    	<i hideLoginPassword class="icon icon-hide"></i>-->
+    </div>
+  </div>
+  <a
+    showScreen="restore"
+    class="signwall-inside_forms-link mt-10 mb-20 inline f-right text-sm"
+    style="color: gray"
+    >Olvidé mi contraseña</a
+  >
+  <re-captcha></re-captcha>
+
+  <button
+    actionLogin
+    class="signwall-inside_forms-btn"
+    style="color: rgb(241, 92, 35); background: rgb(255, 101, 15)"
+  >
+    INICIA SESIÓN
+  </button>
+  <p
+    class="signwall-inside_forms-text mt-10 mb-20"
+    style="font-size: 12px; color: rgb(0, 0, 0); text-align: center"
+  >
+    ¿Aún no tienes una cuenta?<a
+      showScreen="register"
+      class="signwall-inside_forms-link ml-5"
+      style="color: rgb(255, 101, 15); font-weight: bold"
+      >Regístrate</a
+    >
+  </p>
+  <label class="signwall-inside_forms-checkbox"
+    ><input type="checkbox" name="rpolit" value="1" checked="" />
+    <p class="signwall-inside_forms-text mt-10" style="font-size: 12px">
+      Al ingresar por redes sociales autorizo el uso de mis datos para<a
+        href="/tratamiento-de-datos/"
+        target="_blank"
+        rel="noreferrer"
+        class="signwall-inside_forms-link ml-5 inline"
+        style="color: rgb(255, 101, 15); font-weight: bold"
+        >fines adicionales</a
+      >
+    </p>
+    <span></span><span class="checkmark trome"></span
+  ></label>
+  <p
+    class="signwall-inside_forms-text mt-10 mb-10"
+    style="text-align: justify; color: rgb(129, 129, 129); font-size: 11px"
+  >
+    En caso hayas autorizado los fines de uso adicionales anteriormente, no es
+    necesario que lo vuelvas a marcar. Si deseas retirar dicho consentimiento,
+    revisa el procedimiento en nuestras<a
+      href="/politica-de-privacidad/"
+      target="_blank"
+      rel="noreferrer"
+      class="signwall-inside_forms-link ml-5 inline"
+      style="color: rgb(255, 101, 15); font-weight: bold"
+      >Políticas de Privacidad.</a
+    >
+  </p>
+</form>
